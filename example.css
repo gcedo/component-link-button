@@ -1,0 +1,6 @@
+@import './index.css';
+@import "@economist/component-icon/backgrounds/video.css";
+
+.link-button-icon--video.link-button--icon-background {
+  background-color: cadetblue;
+}
