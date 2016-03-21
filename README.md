@@ -1,9 +1,36 @@
 
-# component-link-button
+# Linkbutton
+> A component that displays a button that is also a link.
 
-This was created to help provide a pure `<a>` tag fallback to javascript-powered buttons.
+## Usage
 
-The initial use case was the "load more" pagination button on the economist revamp project. In spite of the "load more" button being powered by javascript, it was also required to work without javascript, hence the need to make it an `<a>` tag.
+**This component expects an ES6 environment**, and so if you are using this in an app,
+you should drop in a polyfill library - it has been tested with [babel-polyfill] but
+[core-js] or [es6-shim] may also work.
 
-It also features a `disabled` prop. When passed, your `onClick` prop becomes just `event.preventDefault()` so that your asynchronous actions such as "load more", or "create comment" can block the button face (both visually and functionally) until the code is ready to perform said asynchronous action again.
+[babel-polyfill]: https://babeljs.io/docs/usage/polyfill/
+[core-js]: https://www.npmjs.com/package/core-js
+[es6-shim]: https://www.npmjs.com/package/es6-shim
 
+The default export is a React Component, so you can simply import the component and use
+it within some JSX, like so:
+
+```js
+import Linkbutton from '@economist/component-link-button';
+
+return <Linkbutton/>;
+```
+
+For more examples on usage, see [`src/example.es6`](./src/example.es6).
+
+## Install
+
+```bash
+npm i -S @economist/component-link-button
+```
+
+## Run tests
+
+```bash
+npm test
+```

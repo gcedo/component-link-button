@@ -1,0 +1,19 @@
+@import './index.css';
+@import '@economist/component-typography';
+@import '@economist/component-icon/backgrounds/video.css';
+@import '@economist/component-palette';
+
+:root {
+  --link-button--styled-font-family: var(--fontfamily-sans);
+  --link-button--styled-font-size: var(--text-size-step--1);
+  --link-button--styled-line-height: var(--text-line-height-sans-on-step--1);
+  --link-button--styled-background: var(--color-chicago);
+  --link-button--styled-color: var(--color-thimphu);
+  --link-button--styled-padding-horizontal: var(--grid-spacing-rabbit);
+  --link-button--styled-padding-vertical: var(--grid-gutter-xl);
+  --link-button--disabled-background: var(--color-london);
+}
+
+.link-button-icon--video.link-button--icon-background {
+  background-color: #5f9ea0;
+}
