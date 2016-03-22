@@ -1,5 +1,5 @@
+import Button from './';
 import React from 'react';
-import Button from './index';
 
 export default (
   <div style={{ padding: '20px' }}>
